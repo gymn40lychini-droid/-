@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ПУЛЬС ГОРОДА — ЗДОРОВЬЕ В РИТМЕ</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+body { margin:0; font-family: Montserrat, Arial, sans-serif; background:#03060a; color:#e6f7ff; }
+.hero { position:relative; height:92vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.pulse-bg { position:absolute; inset:0; background: radial-gradient(ellipse at center, rgba(10,20,40,0.6), rgba(0,0,0,0.8)); }
+/* animated pulse lines */
+.pulse-line{ position:absolute; left:-10%; right:-10%; top:30%; height:200px; background:linear-gradient(90deg, rgba(14,165,255,0.05), rgba(255,50,100,0.06)); filter:blur(30px); animation: move 6s linear infinite; }
+.pulse-line.two{ top:45%; height:300px; animation-duration:7s; }
+.pulse-line.three{ top:60%; height:220px; animation-duration:5.5s; }
+@keyframes move{ 0%{ transform:translateX(-5%); opacity:0.6 } 50%{ transform:translateX(5%); opacity:1 } 100%{ transform:translateX(-5%); opacity:0.6 } }
+.center { position:relative; z-index:3; text-align:center; }
+img.logo{ width:420px; max-width:70%; filter:drop-shadow(0 8px 18px rgba(14,165,255,0.25)); }
+h1{ font-size:44px; margin:12px 0 6px; color:#9fe6ff; text-shadow:0 8px 20px rgba(0,0,0,0.6); }
+h2{ font-size:28px; margin:6px 0 18px; color:#ff7a9a; }
+p.lead{ font-size:20px; opacity:0.95; max-width:900px; margin:0 auto; }
+.cta{ margin-top:20px; display:flex; gap:12px; justify-content:center; }
+.btn{ background:linear-gradient(90deg,#0ea5ff,#ff2f6a); padding:12px 20px; border-radius:10px; color:white; text-decoration:none; font-weight:700; box-shadow:0 6px 18px rgba(0,0,0,0.5); }
+.section{ padding:60px 20px; max-width:1200px; margin:0 auto; }
+.cards{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; margin-top:18px; }
+.card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); padding:18px; width:260px; border-radius:12px; transition:transform .25s, box-shadow .25s; }
+.card:hover{ transform:translateY(-8px); box-shadow:0 20px 40px rgba(14,165,255,0.12); border-color:rgba(14,165,255,0.25); }
+.two-col{ display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; justify-content:center; }
+footer{ padding:20px; text-align:center; color:#99cfe8; border-top:1px solid rgba(255,255,255,0.03); }
+.qr-block{ display:flex; gap:18px; align-items:center; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+.qr-block img{ width:200px; height:200px; background:white; padding:10px; border-radius:8px; }
+.lang-row{ display:flex; gap:12px; justify-content:center; margin-top:8px; }
+.lang{ padding:6px 10px; border-radius:8px; background:rgba(255,255,255,0.02); color:#bfe9ff; }
+@media (max-width:760px){ h1{font-size:28px} h2{font-size:20px} .card{width:100%;} img.logo{width:300px} .qr-block img{width:160px;height:160px} }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="pulse-bg"></div>
+    <div class="pulse-line"></div>
+    <div class="pulse-line two"></div>
+    <div class="pulse-line three"></div>
+    <div class="center">
+      <img src="logo.png" class="logo" alt="logo">
+      <h1>Бейся в ритме здоровья. Почувствуй пульс города.</h1>
+      <h2>Бейся ў рытме здароўя. Адчуй пульс горада.</h2>
+      <p class="lead">Живи. Двигайся. Дыши. — движение, которое объединяет поколение и делает наш город сильнее. Присоединяйся к челленджу «ПроДвижение за ЗОЖ» и покажи, как ты живёшь в ритме здоровья.</p>
+      <div class="cta">
+        <a class="btn" href="https://t.me/gymn40" target="_blank">Присоединиться в Telegram</a>
+        <a class="btn" href="#challenge">Почувствовать ритм</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <h2>О нас / Пра нас</h2>
+    <div class="two-col">
+      <div style="max-width:680px;">
+        <p><strong>Команда «Здоровье в ритме»</strong> из гимназии №40 имени Янки Лучины г. Минска вдохновляет молодых людей выбирать активный образ жизни. Мы создаём спортивные флешмобы, мастер-классы по здоровому питанию и мотивирующие встречи о движении и энергии.</p>
+        <p><em>Мы — пульс города: движение, ритм, жизнь.</em></p>
+      </div>
+      <div style="text-align:center;">
+        <img src="school_logo.png" alt="Гимназия 40" style="width:220px; filter: drop-shadow(0 6px 20px rgba(0,0,0,0.6));">
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="what">
+    <h2>Что такое ЗОЖ? / Што такое ЗОЖ?</h2>
+    <p>Здоровый образ жизни (ЗОЖ) — это выбор в пользу энергии, вдохновения и уважения к собственному телу. Это не запреты, а стиль жизни: движение, питание, сон, эмоции и доброта.</p>
+    <div class="cards">
+      <div class="card"><h3>Ритм движения</h3><p>Танцы, зарядка, прогулки и спорт — всё, что заставляет сердце биться чаще и наполняет нас энергией.</p></div>
+      <div class="card"><h3>Ритм питания</h3><p>Здоровая еда — это топливо для тела и мозга. Баланс макро- и микроэлементов, вода и осознанность в еде.</p></div>
+      <div class="card"><h3>Ритм эмоций</h3><p>Поддерживай позитив, общайся, улыбайся — эмоции влияют на здоровье не меньше, чем упражнения.</p></div>
+      <div class="card"><h3>Ритм отдыха</h3><p>Сон и восстановление — это перезагрузка. Качественный сон — основной ресурс энергии.</p></div>
+      <div class="card"><h3>Ритм добра</h3><p>Помогай другим, будь частью сообщества — доброта возвращается, делая нас сильнее и счастливее.</p></div>
+    </div>
+    <p style="margin-top:18px;"><strong>Почему ЗОЖ полезен?</strong></p>
+    <ul>
+      <li>Лучшее физическое состояние и выносливость.</li>
+      <li>Улучшение настроения и снижение стресса.</li>
+      <li>Сильнее иммунитет и крепкое здоровье в долгосрочной перспективе.</li>
+      <li>Больше энергии для учёбы, творчества и общения.</li>
+      <li>Пример для окружающих — ты вдохновляешь других двигаться.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="challenge">
+    <h2>Челлендж — ПроДвижение за ЗОЖ / Чэллендж — ПраДвижэнне за ЗОЖ</h2>
+    <p>Покажи, как ты живёшь в ритме здоровья: снимай короткие видео или фото — зарядка, полезный перекус, прогулка с друзьями. Публикуй в Telegram-канале гимназии и используй хэштег <strong>#ЗдоровьевРитме</strong>.</p>
+    <div class="qr-block">
+      <div style="text-align:center;">
+        <img src="qr.png" alt="QR">
+        <div style="margin-top:8px; color:#bfe9ff; font-size:14px;">Отсканируй — почувствуй пульс города<br>Адсканіруй — адчуй пульс горада</div>
+      </div>
+      <div style="max-width:520px;">
+        <p><strong>Как участвовать:</strong></p>
+        <ol>
+          <li>Отсканируй QR и перейди в Telegram-группу гимназии.</li>
+          <li>Сними видео или фото (до 30 сек) — покажи свой ритм здоровья.</li>
+          <li>Опубликуй в комментариях к посту челленджа или отправь в канал с хэштегом #ЗдоровьевРитме.</li>
+          <li>Лучшие видео будут использованы в итоговом ролике проекта.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="manifest">
+    <h2>Манифест / Маніфест</h2>
+    <p>Мы — поколение, которое выбирает энергию. Мы не ждём завтра — мы создаём движение сегодня. Мы не стоим — мы двигаемся. Мы — пульс города. Мы — здоровье в ритме.</p>
+  </div>
+
+  <footer>
+    <div>© 2025. Проект гимназии №40 имени Янки Лучины г. Минска.</div>
+    <div style="margin-top:6px; font-size:13px;">Живи. Двигайся. Дыши.</div>
+  </footer>
+</body>
+</html>
